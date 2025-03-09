@@ -47,15 +47,21 @@
    position: absolute;
    right: 20px; 
  }
+ .signInBtn{
+   
+   font-weight: bold;
+   border: none;
+   border-radius: 10px;
+   background-color: rgb(179, 235, 235);
+   padding: 8px 16px;
+   cursor: pointer;
+   position: absolute;
+   right: 20px; 
+ }
  .signInBtn:hover{
    border: 2px solid;
    background-color: white;
  }
- .signInBtn{
-   position: static;
-   margin: 0 auto;
-   text-align: center;
-  }
  
  .header1 {
     color: white;
@@ -66,8 +72,8 @@
  
  .header1 span {
     font-size: 5rem;
-    background-color: aquamarine;
-    border-radius: 2px ;
+    border: 2px solid;
+    border-radius: 10px ;
     color: #007bff; /* Bootstrap primary blue */
     font-weight: bold;
  }
