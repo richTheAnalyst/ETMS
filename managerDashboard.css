@@ -1,0 +1,159 @@
+.navbar-nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-weight: bold;
+  }
+  .nav-link {
+     color:blue !important;
+     position: relative;
+     text-decoration: none;
+  }
+  .nav-link::after {
+     content: '';
+     position: absolute;
+     width: 0;
+     height: 2px;
+     bottom: 0;
+     left: 0;
+     background-color: #ff0831;
+     transition: width 0.3s ease
+  }
+  .nav-link:hover::after {
+     width: 100%;
+  }
+ .nxt1 {
+     background-image: url(resources/image-2.jpg);
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+  }
+  
+  .signInBtn{
+   
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(179, 235, 235);
+    padding: 8px 16px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px; 
+  }
+  .signInBtn:hover{
+    border: 2px solid;
+    background-color: white;
+  }
+
+
+  .sidebar {
+    height: calc(100vh - 56px);
+    position: fixed;
+    overflow-y: auto;
+    z-index: 1000; /* Ensure sidebar stays on top */
+    box-shadow: 3px 0 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(180deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.sidebar .nav-link {
+    color: #212529 !important;
+    margin: 0.25rem 0;
+    border-radius: 0.5rem;
+}
+
+.sidebar .nav-link:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+}
+.nav-link {
+    transition: all 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #e9ecef;
+    border-radius: 5px;
+}
+
+.card {
+    border-radius: 15px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+.badge {
+    font-size: 0.9em;
+    padding: 0.5em 0.75em;
+}
+
+.btn {
+    transition: all 0.3s;
+}
+
+.list-group-item {
+    border: none;
+    padding: 1rem 1.25rem;
+}
+
+
+  .footer-style {
+    background-color: #1c2331;
+    border-radius: 10px;
+  }
+ 
+  /* Social media section */
+  .social-media-section {
+    background-color: #6351ce;
+    border-radius: 10px;
+  }
+  .social-media-section:hover{
+    background-color: #007bff;
+  }
+ 
+  /* Custom horizontal rule */
+  .custom-hr {
+    width: 60px;
+    background-color: #7c4dff;
+    height: 2px;
+  }
+ 
+  /* Links section */
+  .links-section {
+    padding: 20px 0;
+  }
+ 
+  /* Copyright section */
+  .copyright-section {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  #links a:hover{
+    color: blue;
+  }
+
+  @media (max-width: 768px) {
+   
+
+    .signInBtn {
+        position: static;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .sidebar {
+        width: 100%;
+        position: static;
+        height: auto;
+    }
+
+    .col-md-9 {
+        padding-left: 15px !important;
+    }
+}

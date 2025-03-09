@@ -1,0 +1,100 @@
+.navbar-nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: blue !important; /* Force blue color */
+    position: relative;
+    text-decoration: none;
+    padding: 0.5rem 1rem; /* Add padding for better click area */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.nav-link:hover {
+    color: #ff0831 !important; /* Change color on hover */
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ff0831;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%; /* Expand underline on hover */
+}
+
+/* Active link styling */
+.nav-link.active {
+    color: #ff0831 !important; /* Change color for active link */
+}
+
+.nav-link.active::after {
+    width: 100%; /* Show full underline for active link */
+}
+
+main{
+    margin-bottom: 100px;
+    padding: 20px;
+}
+.container h1{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+/*footer styling */
+.footer-style {
+    background-color: #1c2331;
+    border-radius: 10px;
+  }
+ 
+  /* Social media section */
+  .social-media-section {
+    background-color: #6351ce;
+    border-radius: 10px;
+  }
+  .social-media-section:hover{
+    background-color: #007bff;
+  }
+ 
+  /* Custom horizontal rule */
+  .custom-hr {
+    width: 60px;
+    background-color: #7c4dff;
+    height: 2px;
+  }
+ 
+  /* Links section */
+  .links-section {
+    padding: 20px 0;
+  }
+ 
+  /* Copyright section */
+  .copyright-section {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  #links a:hover{
+    color: blue;
+  }
+
+  @media (max-width: 768px){
+    .signInBtn{
+      position: static;
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
